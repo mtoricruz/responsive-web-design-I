@@ -64,13 +64,12 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /*General styling goes here*/
 body{
-	width:1500px;
+	width:100%;
 	text-align:center;
 	margin:0 auto;
 }
 hr{
-	margin-right:21%;
-    margin-left:21%;
+	width:50%
 }
 /*Navigation Styling Here*/
 .links {
@@ -114,6 +113,8 @@ button{
 	background-color: white;
 	transition: all 0.5s;
 	cursor: pointer;
+	padding: 2px 35px;
+	border: 2px solid black;
 }
 .circleimg{
 	
@@ -124,7 +125,7 @@ button{
 	justify-content: space-evenly;
 }
 .top div{
-	width:27%;
+	width:18%;
 	display:flex;
 	justify-content: left;
 	flex-direction: column;
@@ -145,15 +146,14 @@ button{
 /* Section bottom goes here */
 .bottom{
 	display:flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 .bottom div{
-	width:15%;
+	width:13%;
 	display:flex;
 	text-align: left;
 	flex-direction: column;
-	margin-top:2%;
-	margin-bottom: 2%;
+	margin:2% 2%
 }
 .three{
 	margin-left: 17%;
@@ -164,9 +164,13 @@ button{
 /* Section contact goes here */
 .contact{
 	display:flex;
+	justify-content: left;
 	flex-direction: column;
+}
+.contact div{
+	width:70%;
 	text-align: left;
-	margin-left: 20.5%;
+	margin-left: 25%;
 }
 .six address{
 	margin-bottom:1%;
@@ -181,10 +185,44 @@ footer{
 
 /****************************Tablet View****************************/
 @media (max-width:800px){
-
+	/*General Style code goes here*/
+	hr{
+		width:90%;
+	}
+	/*Nav code goes here*/
+	.navigation{
+		flex-direction: column-reverse;
+	}
+	.logoimg{
+		margin:3% 0;
+	}
+	.links{
+		width: 100%;
+		justify-content: space-around;
+	}
+	/*Header code goes here*/
+	.circleimg{
+		display:none;
+	}
+	/*Body code goes here*/
+	.top div{
+		width:100%;
+		margin: 3% 5%
+	}
+	.midimg{
+		width: 90%;
+	}
+	.bottom div{
+		width:100%;
+		margin: 2% 5%;
+	}
+	.contact div{
+		width:100%;
+		margin-left:5%;
+	}
 }
 
 /****************************Mobile View****************************/
 @media (max-width:500px){
-	
+
 }
