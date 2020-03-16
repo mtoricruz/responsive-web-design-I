@@ -71,6 +71,9 @@ body{
 hr{
 	width:50%
 }
+a{
+	text-decoration: none;
+}
 /*Navigation Styling Here*/
 .links {
 	width:70%;
@@ -195,6 +198,7 @@ footer{
 	}
 	.logoimg{
 		margin:3% 0;
+		margin-left: 5%
 	}
 	.links{
 		width: 100%;
@@ -224,5 +228,48 @@ footer{
 
 /****************************Mobile View****************************/
 @media (max-width:500px){
+	/*General Style code goes here*/
+	hr{
+		margin-top:5%;
+		margin-bottom:8%
+	}
+	/*Nav code goes here*/
+	.links{
+		flex-direction: column;
+		margin-right: 5%;
+		font-size: larger;
+	}
+	.links a{
+		padding: 4% 60%;
+		border-bottom: 1px solid black;
+	}
+	.serviceatag{
+		border-top: 1px solid black;
+	}
+	.logoimg{
+		margin-left:10%;
+	}
+	/*Header code goes here*/
 
+	/*Body code goes here*/	
+	.top{
+		flex-direction: column;
+		width: 90%;
+	}
+	.midimg{
+		margin-top: 5%;
+	}
+	.bottom{
+		flex-direction: column;
+		width:90%;
+	}
+	.bottom div{
+		margin:6% 5%;
+	}
+	.six address{
+		margin-bottom:3%;
+	}
+	.six p{
+		margin-bottom:3%;
+	}
 }
