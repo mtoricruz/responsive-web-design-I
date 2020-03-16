@@ -230,15 +230,17 @@ footer{
 @media (max-width:500px){
 	/*General Style code goes here*/
 	hr{
+		width: 100%;
 		margin-top:5%;
-		margin-bottom:8%
+		margin-bottom:8%;
+		margin-left: 10%;
 	}
 	/*Nav code goes here*/
 	.links{
 		flex-direction: column;
 		width:100%;
 		font-size: larger;
-		margin-right:10%;
+		/* margin-right:10%; */
 	}
 	.links a{
 		padding: 4% 75%;
@@ -251,14 +253,19 @@ footer{
 		margin-left:10%;
 	}
 	/*Header code goes here*/
-
+	.headandbutt{
+		justify-content: center;
+		margin-left:15%;
+	}
 	/*Body code goes here*/	
 	.top{
 		flex-direction: column;
-		width: 95%;
+		width: 100%;
 	}
 	.midimg{
+		width: 100%;
 		margin-top: 5%;
+		margin-left: 10%;
 	}
 	.bottom{
 		flex-direction: column;
