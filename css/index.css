@@ -236,11 +236,12 @@ footer{
 	/*Nav code goes here*/
 	.links{
 		flex-direction: column;
-		margin-right: 5%;
+		width:100%;
 		font-size: larger;
+		margin-right:10%;
 	}
 	.links a{
-		padding: 4% 60%;
+		padding: 4% 75%;
 		border-bottom: 1px solid black;
 	}
 	.serviceatag{
@@ -254,14 +255,14 @@ footer{
 	/*Body code goes here*/	
 	.top{
 		flex-direction: column;
-		width: 90%;
+		width: 95%;
 	}
 	.midimg{
 		margin-top: 5%;
 	}
 	.bottom{
 		flex-direction: column;
-		width:90%;
+		width:95%;
 	}
 	.bottom div{
 		margin:6% 5%;
