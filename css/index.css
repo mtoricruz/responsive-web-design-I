@@ -1,3 +1,283 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/* border:1px solid grey; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	max-width:100%;
+}
 
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*General styling goes here*/
+body{
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+}
+hr{
+	width:50%
+}
+a{
+	text-decoration: none;
+}
+/*Navigation Styling Here*/
+.links {
+	width:70%;
+	justify-content:space-evenly;
+}
+.links img{
+	margin-right:5%
+}
+.links a{
+	margin-left: 5%
+}
+.navigation *{
+	color: grey;
+}
+nav{
+    margin-top:1%;
+}
+nav div{
+	display:flex;
+	align-items: center;
+}
+/*Header Styling Goes Here*/
+header div{
+	font-size: 70px;
+}
+header{
+	display:flex;
+    justify-content: space-evenly;
+    margin:3% 0;
+}
+.h1home{
+	font-size:90%;
+	margin-top: 25%;
+}
+.headandbutt{
+	/* margin-left:15%; */
+}
+button{
+	font-size:18px;
+	background-color: white;
+	transition: all 0.5s;
+	cursor: pointer;
+	padding: 2px 35px;
+	border: 2px solid black;
+}
+.circleimg{
+	
+}
+/* Section top goes here*/
+.top{
+	display:flex;
+	justify-content: space-evenly;
+}
+.top div{
+	width:18%;
+	display:flex;
+	justify-content: left;
+	flex-direction: column;
+	text-align: left;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.one{
+	margin-left:15.25%;
+}
+.two{
+	margin-right:15.25%;
+}
+/* Section image goes here*/
+.image{
+
+}
+/* Section bottom goes here */
+.bottom{
+	display:flex;
+	justify-content: center;
+}
+.bottom div{
+	width:13%;
+	display:flex;
+	text-align: left;
+	flex-direction: column;
+	margin:2% 2%
+}
+.three{
+	margin-left: 17%;
+}
+.five{
+	margin-right: 17%
+}
+/* Section contact goes here */
+.contact{
+	display:flex;
+	justify-content: left;
+	flex-direction: column;
+}
+.contact div{
+	width:70%;
+	text-align: left;
+	margin-left: 25%;
+}
+.six address{
+	margin-bottom:1%;
+}
+.six p{
+	margin-bottom:1%;
+}
+/* Section footer goes here*/
+footer{
+
+}
+
+/****************************Tablet View****************************/
+@media (max-width:800px){
+	/*General Style code goes here*/
+	hr{
+		width:90%;
+	}
+	/*Nav code goes here*/
+	.navigation{
+		flex-direction: column-reverse;
+	}
+	.logoimg{
+		margin:3% 0;
+		margin-left: 5%
+	}
+	.links{
+		width: 100%;
+		justify-content: space-around;
+	}
+	/*Header code goes here*/
+	.circleimg{
+		display:none;
+	}
+	/*Body code goes here*/
+	.top div{
+		width:100%;
+		margin: 3% 5%
+	}
+	.midimg{
+		width: 90%;
+	}
+	.bottom div{
+		width:100%;
+		margin: 2% 5%;
+	}
+	.contact div{
+		width:100%;
+		margin-left:5%;
+	}
+}
+
+/****************************Mobile View****************************/
+@media (max-width:500px){
+	/*General Style code goes here*/
+	hr{
+		width: 100%;
+		margin-top:5%;
+		margin-bottom:8%;
+		margin-left: 10%;
+	}
+	/*Nav code goes here*/
+	.links{
+		flex-direction: column;
+		width:100%;
+		font-size: larger;
+		/* margin-right:10%; */
+	}
+	.links a{
+		padding: 4% 75%;
+		border-bottom: 1px solid black;
+	}
+	.serviceatag{
+		border-top: 1px solid black;
+	}
+	.logoimg{
+		margin-left:10%;
+	}
+	/*Header code goes here*/
+	.headandbutt{
+		justify-content: center;
+		margin-left:15%;
+	}
+	/*Body code goes here*/	
+	.top{
+		flex-direction: column;
+		width: 100%;
+	}
+	.midimg{
+		width: 100%;
+		margin-top: 5%;
+		margin-left: 10%;
+	}
+	.bottom{
+		flex-direction: column;
+		width:95%;
+	}
+	.bottom div{
+		margin:6% 5%;
+	}
+	.six address{
+		margin-bottom:3%;
+	}
+	.six p{
+		margin-bottom:3%;
+	}
+}
